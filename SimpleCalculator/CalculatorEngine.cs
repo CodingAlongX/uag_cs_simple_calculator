@@ -2,9 +2,9 @@
 
 namespace SimpleCalculator
 {
-    internal class CalculatorEngine
+    public class CalculatorEngine
     {
-        internal double Calculate(string operation, double firstNumber, double secondNumber)
+        public double Calculate(string operation, double firstNumber, double secondNumber)
         {
             throw new NotImplementedException();
         }

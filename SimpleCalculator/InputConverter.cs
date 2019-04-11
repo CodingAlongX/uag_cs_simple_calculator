@@ -2,11 +2,14 @@
 
 namespace SimpleCalculator
 {
-    internal class InputConverter
+    public class InputConverter
     {
-        internal double ConvertInputToNumeric(string v)
+        public double ConvertInputToNumeric(string input)
         {
-            throw new NotImplementedException();
+            double convertedNumber;
+
+            if (!double.TryParse(input, out convertedNumber)) throw new ArgumentException("Expected a numeric value");
+            return convertedNumber;
         }
     }
 }
